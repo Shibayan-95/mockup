@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+		ul li {
+			display: inline-block;
+			list-style-type: none;
+		}
+		.a:hover{
+			background-color:yellow; 
+		}
+.sprite{		
+	background: url("sprites.png") no-repeat;
+		.off{
+background-position: 0px 0px;
+width: 50px;
+height: 50px;
+}
+.gear{
+background-position: 0px 0px;
+width: 50px;
+height: 50px;
+}
+.question{
+background-position: 0px 0px;
+width: 50px;
+height: 50px;
+}
+}
+#nav li, #nav a {
+    height: 44px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#question {
+    left: 0px;
+    width: 46px;
+    background: url('sprites.png') 0 0;
+}
+
+#gear {
+    left: 63px;
+    width: 43px;
+    background: url('sprites.png') -47px 0;
+}
+
+#off {
+    left: 129px;
+    width: 43px;
+    background: url('sprites.png') -91px 0;
+}
+	</style>
+</head>
+<body>
+<div class="wrapper" style="position:relative;">
+       <div class="head" style="background-color:lightblue;height:50px;width:100%;position:absolute;">
+	      <ul class="a" id="nav" style="float:right;">
+		     <li id="question" style="padding-right:20px;"><a href="abc.com"><!--practice<img class="gear" src="sprites.png">--></a></li>
+		     <li id="gear" style="padding-right:20px;"><a href="abc.com"><!--practice<img class="question" src="sprites.png">--></a></li>
+		    <li id="off" style="padding-right:20px;"><a href="abc.com"><!--<img class="off" src="sprites.png">--></a></li>
+            
+	    </ul>
+       </div>
+      
+       <div class="section1" style="">
+
+       <h1>User Profile</h1>
+       	<form style="position:absolute;">
+       	<h2 style="right:50%;">Login Information</h2>
+       	<p>User name: <input type="text" name=""></p>
+       	</form>
+       </div>
+</div>
+</body>
+</html>
