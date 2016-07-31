@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+  form { width: 400px; }
+label {
+  font-size: 16px;
+float: left;
+width: 10em;
+margin-right: 1em;
+padding-left: 50px;
+}
+
+
+		ul li {
+			display: inline-block;
+			list-style-type: none;
+		}
+		a:hover{
+			background-color:black; 
+		}
+<!--.sprite{		
+	background: url("sprites.png") no-repeat;
+		.off{
+background-position: 0px 0px;
+width: 50px;
+height: 50px;
+}
+.gear{
+background-position: 0px 0px;
+width: 50px;
+height: 50px;
+}
+.question{
+background-position: 0px 0px;
+width: 50px;
+height: 50px;
+}
+}
+#nav li, #nav a {
+    
+    display: inline-block;
+    list-style-type: none;
+}-->
+<!--
+#question {
+    left: 200px;
+    width: 10px;
+    background: url('sprites.png') 0 0;
+}
+#gear {
+    left: 400px;
+    width: 10px;
+    background: url('sprites.png') -47px 0;
+}
+#off {
+    left: 600px;
+    width: 10px;
+    background: url('sprites.png') -91px 0;
+}-->
+	</style>
+</head>
+<body>
+<div class="wrapper" style="position:relative;">
+       <div class="head" style="background-color:lightblue;height:50px;width:100%;position:absolute;top:0px;border-bottom:2px solid darkblue;">
+	      <ul class="a" id="nav" style="float:right;">
+         <li id="prof" style="padding-right:20px;border-right:1px solid black;"><a href="abc.com"><img class="off" src="me.jpg" style="height:30px;width:30px;border-radius:20px 20px 20px 20px;"></a>Shibayan</li>
+		     <li id="question" style="margin-right:20px;"><a href="abc.com"><img class="gear" src="gear.png" style="height:20px;width:20px"></a></li>
+		     <li id="gear" style="margin-right:20px;"><a href="abc.com"><img class="question" src="question.png" style="height:20px;width:20px"></a></li>
+		    <li id="off" style="margin-right:20px;"><a href="abc.com"><img class="off" src="off.png" style="height:20px;width:20px"></a></li>
+           
+	    </ul>
+       </div>
+      <div class="heading" style="width:100%;height:50px;top:50px;position:absolute;background-color:white;border-bottom:1px solid black;">
+      <b style="font-size:30px;">User Profile</b>
+      </div>
+       <div class="section1" style="width:30%;float:left;background-color:;height:1000px;top:200px;">
+         
+         
+         <form style="padding-left:50px;">
+         <p><input type="image" src="profile.png" style="top:20%;height:200px;margin-top:100px;"></p>
+               <p><label>Upload Profile Pic:</label><input class="upload field" type="file" value="browse" style="padding-left:30px;"><br /><p>
+                  <p style="padding-left:30px;"><input type="submit" name="" value="Upload" style="left:100px;margin-top:20px;margin-right:20px;"></p>
+       </form>
+       </div>
+      <div class="section2" style="width:70%;float:right;background-color:;height:350px;top:200px;">
+       <h1>User Profile</h1>
+       	<form style="position:absolute;">
+       	<h2 style="right:50%;">Login Information</h2>
+       	<p><label>User name:</label><input class="us" type="text" name="" style=""><br /><p>
+        <p><label>Email Id:</label> <input class="eid" type="email" ><br /></p>
+        <p><label>Password:</label> <input type="password" name=""><br /></p>
+        <p><label>Confirm Password:</label> <input type="password" name=""><br /></p>
+       	<p><label>Access Level:</label> <input type="radio" name="accesslevel" value="Admin">Admin<input type="radio" name="accesslevel" value="User">User</p>
+        </form>
+        </div>
+        <div class="section3" style="width:70%;float:right;height:350px;top:500px;">
+       
+        <form style="position:absolute;">
+        <h2 style="right:50%;">Personal Information</h2>
+        <p><label>First name:</label><input class="fn" type="text" name="" style=""><br /><p>
+        <p><label>Last Name:</label> <input class="ln" type="text" ><br /></p>
+        <p><label>Employee Id:</label> <input class="empid" type="text" ><br /></p>
+        <p><label>Location:</label> <input class="loc" type="text" ><br /></p>
+        <p><label>About:</label> <input class="abt" type="text" ><br /></p>
+        </form>
+       </div>
+       <div class="section4" style="width:70%;float:right;height:200px;top:800px;">
+       
+        <form style="position:absolute;">
+        <h2 style="right:50%;">Add a new Greeting</h2>
+        <p><label>Upload Greeting:</label><input class="upload field" type="file" value="browse" style="padding-left:50px;"><br /><p>
+        <p style="color:green;">(Upload greeting in .png,.jpg,.pdf format only)</p>
+        <p style="padding-left:50px;"><input type="text" name="" style="height:50px;padding-left:50px;"></p>
+        </form>
+        </div>
+        <div class="section5" style="background-color:lightblue;height:50px;width:80%;position:absolute;top:1000px;margin-left:10%;margin-right:10%;">
+                    <input type="button" name="" value="Cancel" style="float:right;margin-top:20px;margin-right:20px;">
+                    <input type="submit" name="" value="Save" style="background-color:blue;float:right;margin-top:20px;margin-right:20px;">
+        </div>
+       <div id="footer" style="background-color:darkgrey;top:1050px;height:50px;width:100%;"></div>
+</div>
+</body>
+
+</html>
