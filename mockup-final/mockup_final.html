@@ -11,8 +11,14 @@ width: 10em;
 margin-right: 1em;
 padding-left: 50px;
 }
-
-
+input[type=file]{
+  display: none;
+}
+.browse{
+  border:1px solid black;
+  display: inline-block;
+  
+}
 		ul li {
 			display: inline-block;
 			list-style-type: none;
@@ -80,8 +86,7 @@ height: 50px;
          
          <form style="padding-left:50px;">
          <p><input type="image" src="profile.png" style="top:20%;height:200px;margin-top:100px;"></p>
-               <p><label>Upload Profile Pic:</label><input class="upload field" type="file" value="browse" style="padding-left:30px;"><br /><p>
-                  <p style="padding-left:30px;"><input type="submit" name="" value="Upload" style="left:100px;margin-top:20px;margin-right:20px;"></p>
+               <p><label>Upload Profile Pic:</label><p style="padding-left:50px;"><label class="browse" for="file upload">Browse</label><input type="file" id="file upload" value="browse"/><p>
        </form>
        </div>
       <div class="section2" style="width:70%;float:right;background-color:;height:350px;top:200px;">
@@ -110,7 +115,7 @@ height: 50px;
        
         <form style="position:absolute;">
         <h2 style="right:50%;">Add a new Greeting</h2>
-        <p><label>Upload Greeting:</label><input class="upload field" type="file" value="browse" style="padding-left:50px;"><br /><p>
+        <p style="padding-left:50px;"><label>Upload Greeting:</label><label class="browse" for="file upload">Browse</label><input type="file" id="file upload" value="browse"/><p>
         <p style="color:green;">(Upload greeting in .png,.jpg,.pdf format only)</p>
         <p style="padding-left:50px;"><input type="text" name="" style="height:50px;padding-left:50px;"></p>
         </form>
